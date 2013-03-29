@@ -48,7 +48,7 @@ int main(void)
 		printf("SysTick_Config fail\r\n");
 	} 
 	///等外设准备好
-	Set_SoftTimer(Dleay_1S/5);
+	Set_SoftTimer(Dleay_1S/2);
 	while(!Get_State_SoftTimer());///<waite soft timer end up
 	LCD_init(); 
 	Lcd_Clr_Scr();
